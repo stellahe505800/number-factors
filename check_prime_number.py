@@ -6,9 +6,10 @@ def main_function():
     is_prime = True # this is a boolean flag to track if the number is prime
 
     for i in range(2, number):
-        # print(f"Counting: {i}")
+        print(f"try {number}/{i}")
         if number % i == 0:
             is_prime = False
+            break
 
     if is_prime and number > 1:
         print(f"{number} is a prime number.")
